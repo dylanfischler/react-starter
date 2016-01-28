@@ -36,7 +36,7 @@ gulp.task('clean', function () {
 gulp.task('scss', function() {
   return gulp.src('app/scss/main.scss')
     .pipe(sass().on('error', sass.logError))
-    .pipe(gulp.dest('build/css/main.css'));
+    .pipe(gulp.dest('build/css/'));
 });
 
 gulp.task('js', function(){
